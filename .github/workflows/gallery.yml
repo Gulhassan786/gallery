@@ -6,12 +6,9 @@ name: gallery_web_site
 # events but only for the master branch
 on:
   push:
-<<<<<<< HEAD
-    branches: [master]
-=======
-    branches: [ master ]
 
->>>>>>> 824e130ee8a192fd131931fd48e0f24984932ab8
+    branches: [master]
+
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -28,13 +25,9 @@ jobs:
       # Runs a single command using the runners shell
       - name: Installing Node
         uses: actions/setup-node@v2-beta
-<<<<<<< HEAD
+
         with:
           node-version: 12
-=======
-        with: 
-             node-version: 12
->>>>>>> 824e130ee8a192fd131931fd48e0f24984932ab8
 
       # Runs a set of commands using the runners shell
       - name: Installing surge
