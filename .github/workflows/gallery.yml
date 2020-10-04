@@ -6,7 +6,6 @@ name: gallery_web_site
 # events but only for the master branch
 on:
   push:
-
     branches: [master]
 
 
@@ -27,10 +26,10 @@ jobs:
         uses: actions/setup-node@v2-beta
 
         with:
-          node-version: 12
+           node-version: 12
 
       # Runs a set of commands using the runners shell
       - name: Installing surge
         run: npm install --global surge
       - name: deploying using surge
-        run: surge ./ gallery_web_by_hassan.surge.sh --token ${{ secrets.gallery_token}}
+        run: surge ./ gallery_beauty.surge.sh --token ${{ secrets.gallery_token}}
